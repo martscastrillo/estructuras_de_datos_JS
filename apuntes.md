@@ -33,10 +33,6 @@ Arrays dinámicos son aquellos que podemos mutar
   - Estáticos ⇒ Definimos cuantos slots exactamente vamos a usar
   - Dinámicos ⇒ JS Maneja de forma por defecto
 
-## Construyendo Arrays
-
-## Eliminando elementos del Array
-
 ## Strings
 
 ## Hash Table
