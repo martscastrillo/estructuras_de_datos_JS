@@ -30,8 +30,45 @@ Arrays dinámicos son aquellos que podemos mutar
   - Splice ⇒ Agrega un elemento en una parte del array
 - Si nosotros agregamos un elemento al inicio debe haber ciertas operaciones que deben suceder
 - Existen dos formas de arrays
+
   - Estáticos ⇒ Definimos cuantos slots exactamente vamos a usar
   - Dinámicos ⇒ JS Maneja de forma por defecto
+
+    <code>
+  class MyArray {
+      constructor() {
+        this.length = 0;
+        this.data = {};
+      }
+      get(index) {
+        return this.data[index];
+      }
+      push(item) {
+        this.data[this.length] = item;
+        this.length++;
+        return this.data;
+      }
+      pop() {
+        const lastItem = this.data[this.length - 1];
+        delete this.data[this.length - 1];
+        this.length--;
+        return lastItem;
+      }
+      delete(index) {
+        const item = this.data[index];
+        this.shiftIndex(index);
+    
+        return item;
+      }
+      shiftIndex(index) {
+        for (let i = index; i < this.length - 1; i++) {
+          this.data[i] = this.data[i + 1];
+        }
+        delete this.data[this.length - 1];
+        this.length--;
+      }
+    }
+    </code>
 
 ## Strings
 
