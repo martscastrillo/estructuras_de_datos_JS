@@ -93,6 +93,31 @@ RESUMEN: Los strings son inmutables es decir que una vez definidos no podemos ca
 
 ## Hash Table
 
+Hash function es poder asegurar generar un hash que se convierte en el address para acceder al valor.
+
+- En JavaScript se pueden conocer como objetos o Maps [Aun les falta unos pasos para concretarlo]
+- En otros lenguajes como python son conocidos como Diccionarios [Python], Maps [Java, Go], Hashes [Ruby]
+
+Hash Tables vs Objetos
+
+- Las hash tables son similares a los objetos porque tienen el concepto de guardar valores key, value
+- La diferencia es que tienen un paso extra que se convierte en caja negra la cual es una hash function
+- Funciona de una manera similar a los arreglos debido a que accedemos a través de un numero
+
+Métodos
+
+- Insert ⇒ Insertar un elemento en la tabla
+- Search ⇒ Buscar un elemento por key
+- Delete ⇒ Borrar un elemento
+
+Colisión de Hash Table
+
+- En ocasiones podemos pasar un key distintito puede generar el mismo hash
+- Colisionando con el anterior
+- Esto podrá depender de la cantidad de espacio disponible
+
+RESUMEN: Las hash tables se parecen a los objetos porque podemos guardar valores por llave, valor. Pero su principal diferencia es que genera un hash para cada llave valor. El único problema es que se puede generar un mismo hash colisionando con el anterior
+
 ## Construyendo una Hash Table
 
 ## Implementando el método get
