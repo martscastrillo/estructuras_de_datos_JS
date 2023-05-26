@@ -35,7 +35,7 @@ Arrays dinámicos son aquellos que podemos mutar
   - Dinámicos ⇒ JS Maneja de forma por defecto
 
     <code>
-  class MyArray {
+  ´class MyArray {
       constructor() {
         this.length = 0;
         this.data = {};
@@ -66,7 +66,7 @@ Arrays dinámicos son aquellos que podemos mutar
         delete this.data[this.length - 1];
         this.length--;
       }
-    }
+    }`
     </code>
 
 ## Strings
