@@ -1,2 +1,2 @@
-##Memoria y cómo se guardan los datos
+## Memoria y cómo se guardan los datos
 
