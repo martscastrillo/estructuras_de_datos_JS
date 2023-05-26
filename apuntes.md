@@ -57,7 +57,6 @@ Arrays dinámicos son aquellos que podemos mutar
       delete(index) {
         const item = this.data[index];
         this.shiftIndex(index);
-    
         return item;
       }
       shiftIndex(index) {
