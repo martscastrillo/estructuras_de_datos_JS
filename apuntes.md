@@ -34,6 +34,8 @@ Arrays dinámicos son aquellos que podemos mutar
   - Estáticos ⇒ Definimos cuantos slots exactamente vamos a usar
   - Dinámicos ⇒ JS Maneja de forma por defecto
 
+## Construyendo nuestro array
+
 ```javascript
 class MyArray {
 	constructor() {
@@ -119,6 +121,31 @@ Colisión de Hash Table
 RESUMEN: Las hash tables se parecen a los objetos porque podemos guardar valores por llave, valor. Pero su principal diferencia es que genera un hash para cada llave valor. El único problema es que se puede generar un mismo hash colisionando con el anterior
 
 ## Construyendo una Hash Table
+
+```javascript
+class HashTable {
+	constructor(size) {
+		this.data = new Array(size);
+	}
+	hashMethod(key) {
+		let hash = 0;
+		for (let i = 0; i < key.length; i++) {
+			hash = (hash + key.charCodeAt(i) * i) % this.data.length;
+		}
+		return hash;
+	}
+	set(key, value) {
+		const address = this.hashMethod(key);
+		if (!this.data[address]) {
+			this.data[address] = [];
+		}
+		this.data[address].push([key, value]);
+		return this.data;
+	}
+}
+
+const myHashTable = new HashTable(50);
+```
 
 ## Implementando el método get
 
