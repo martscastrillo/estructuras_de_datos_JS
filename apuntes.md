@@ -147,7 +147,7 @@ class HashTable {
 const myHashTable = new HashTable(50);
 ```
 
-## Implementando el método get
+## Implementando el método Get
 
 ## Linked List
 
