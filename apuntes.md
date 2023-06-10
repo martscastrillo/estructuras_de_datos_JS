@@ -148,6 +148,9 @@ const myHashTable = new HashTable(50);
 ```
 
 ## Implementando el método Get
+```javascript
+
+```
 
 ## Linked List
 
