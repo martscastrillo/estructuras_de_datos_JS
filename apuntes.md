@@ -212,6 +212,22 @@ class HashTable {
 ```
 
 ## Linked List
+Linked List son simplemente un conjunto de nodos ordenados que contienen los valores que necesitemos (numbers, strings, boolean, etc). Cada uno tiene un valor y una referencia a un siguiente nodo.
+- Esta es la anatomía de un linked list
+- Tenemos el nodo principal o cabeza, luego tenemos diferentes nodos y un nodo final o cola
+- Cada flecha es su conexión
+- Existen dos tipos de Linked List en este caso usaremos solo la Singly Linked List
+
+### Métodos
+- Prepend ⇒ Agregar un nodo al inicio
+- Append ⇒ Agregar un nodo al final
+- Lookup / Search ⇒ Buscar un nodo
+- Insert ⇒ insertar un nodo en la lista
+- Delete ⇒ Borrar un nodo
+### Singly Linked List
+- Tenemos un nodo, Se compone de dos factores
+- Valor
+- Valor del Next
 
 ## Construyendo una Singly Linked List
 
